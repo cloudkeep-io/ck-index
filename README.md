@@ -18,6 +18,7 @@ Probably obsolete. Early attempt to document API.
 ## Website
 ### [ck-www](https://github.com/cloudkeep-io/ck-www)
 Hugo source for our website.
+
 | branch | tag | pipeline action |
 | --- | --- | --- |
 | `master` | - | deploys to [cloudkeep.io](https://cloudkeep.io) |
@@ -27,6 +28,7 @@ Hugo source for our website.
 ## Console (our UI)
 ### [ck-console](https://github.com/cloudkeep-io/ck-console)
 Angular source for our UI.
+
 | branch | tag | pipeline action |
 | --- | --- | --- |
 | `master` | - | deploys to [console](https://console.cloudkeep.io) |
@@ -39,6 +41,7 @@ CloudKeep Backend APIs are provided by these services. They are all deployed as
 Docker Containers into EKS.
 ### [ck-user](https://github.com/cloudkeep-io/ck-user)
 CloudKeep API for user and organization management.
+
 | branch | tag | pipeline action |
 | --- | --- | --- |
 | * | - | builds/tests/pushes image to CloudKeep ECR with ver==`git describe --tags --always` |
@@ -46,6 +49,7 @@ CloudKeep API for user and organization management.
 
 ### [ck-aws](https://github.com/cloudkeep-io/ck-aws)
 CloudKeep API for AWS related resource management
+
 | branch | tag | pipeline action |
 | --- | --- | --- |
 | * | - | builds/tests image |
@@ -56,6 +60,7 @@ These repos are just building "custom" Docker container images from external
 sources.
 ### [ck-docker](https://github.com/cloudkeep-io/ck-docker)
 This image is used as base to CloudKeep Services' Container images.
+
 | branch | tag | pipeline action |
 | --- | --- | --- |
 | * | - | builds/tests image |
@@ -90,12 +95,14 @@ This image is used as base to CloudKeep Services' Container images.
 ## Terraform
 ### [ck-infra0](https://github.com/cloudkeep-io/ck-infra0)
 Should rename to `cki0` - multi-stage (PROD, STAGE, DEV, etc), multi-region
+
 | branch | tag | pipeline action |
 | --- | --- | --- |
 | `master` | - | runs terraform against the checked in code |
 
 ### [ck-infra1-prod](https://github.com/cloudkeep-io/ck-infra1-prod)
 Should rename to `cki1-prod` - PROD, multi-region
+
 | branch | tag | pipeline action |
 | --- | --- | --- |
 | `master` | - | runs terraform against the checked in code |
@@ -103,18 +110,21 @@ Should rename to `cki1-prod` - PROD, multi-region
 ### [ck-infra2-devlocal](https://github.com/cloudkeep-io/ck-infra2-devlocal)
 ### [ck-infra2-prod-use1](https://github.com/cloudkeep-io/ck-infra2-prod-use1)
 Should rename to `cki2-prod-use1` - PROD, us-east-1
+
 | branch | tag | pipeline action |
 | --- | --- | --- |
 | `master` | - | runs terraform against the checked in code |
 ### [cki3-dev01-use1](https://github.com/cloudkeep-io/cki3-dev01-use1)
 ### [ck-infra3-prod-use1](https://github.com/cloudkeep-io/ck-infra3-prod-use1)
 Should rename to `cki3-prod-use1` - PROD, us-east-1
+
 | branch | tag | pipeline action |
 | --- | --- | --- |
 | `master` | - | runs terraform against the checked in code |
 ### [ck-infra4-devlocal](https://github.com/cloudkeep-io/ck-infra4-devlocal)
 ### [ck-infra4-prod-use1](https://github.com/cloudkeep-io/ck-infra4-prod-use1)
 Should rename to `cki4-prod-use1` - PROD, us-east-1
+
 | branch | tag | pipeline action |
 | --- | --- | --- |
 | `master` | - | runs terraform against the checked in code |
